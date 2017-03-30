@@ -1,0 +1,33 @@
+footer{
+  background-color: $color1;
+  padding:50px 0;
+
+  h2{
+    font-weight: 200;
+  }
+
+  .container{
+    overflow: hidden;
+
+    .contact{
+      width: 22%;
+      float: left;
+      margin-right: 3%;
+    }
+
+    .staff{
+      .columns{
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+
+        .column{
+          width: 28%;
+          min-width: 200px;
+          margin-right: 5%;
+        }
+      }
+    }
+
+  }
+}
