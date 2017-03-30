@@ -1,25 +1,50 @@
 footer {
   background-color: #db6639;
-  padding: 50px 0; }
+  text-align: center; }
   footer h2 {
     font-weight: 200; }
-  footer .container {
-    overflow: hidden; }
-    footer .container .contact {
-      width: 22%;
-      float: left;
-      margin-right: 3%; }
-    footer .container .staff .columns {
-      display: flex;
-      flex-wrap: wrap;
-      width: 75%; }
-      footer .container .staff .columns .column {
-        width: 28%;
-        min-width: 200px;
-        margin-right: 5%; }
+  footer .container .contact {
+    margin-bottom: 50px; }
+  footer .container .staff .columns {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap; }
+    footer .container .staff .columns .column {
+      width: 100%; }
 
+@media (min-width: 767px) {
+  footer {
+    text-align: left; }
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      footer .container .contact {
+        float: left;
+        width: 50%; }
+      footer .container .staff {
+        width: 50%; } }
+@media (min-width: 900px) {
+  footer .container .contact {
+    width: 33%; }
+  footer .container .staff {
+    width: 66%; } }
 .sub-art-kind ul {
   display: none; }
+
+.topbox {
+  width: 100%;
+  text-align: center; }
+  .topbox .top-button {
+    display: inline-block;
+    padding: 10px;
+    transition: background-color .5s ease;
+    text-transform: uppercase; }
+    .topbox .top-button h5 {
+      font-weight: 400; }
+  .topbox .top-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1); }
 
 body {
   font-family: 'Oswald', sans-serif; }
@@ -58,7 +83,8 @@ a:hover {
 
 .container {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 50px 0; }
 
 li {
   list-style-type: none; }
