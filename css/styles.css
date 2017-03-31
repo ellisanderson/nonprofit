@@ -2,13 +2,34 @@
   background-color: #eacbb4; }
   #grants .container {
     text-align: center; }
+    #grants .container .sub-sections {
+      margin-top: 40px; }
+      #grants .container .sub-sections .sub-section {
+        width: 100%;
+        margin-bottom: 40px; }
 
-#jobs .container {
-  text-align: center; }
-  #jobs .container .job-listing {
-    margin-bottom: 40px; }
-    #jobs .container .job-listing .details {
-      display: none; }
+@media (min-width: 767px) {
+  #grants .container .sub-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #grants .container .sub-sections .sub-section {
+      width: 50%;
+      min-height: 300px;
+      padding: 0 5%; } }
+@media (min-width: 1200px) {
+  #grants .container .sub-sections .sub-section {
+    width: 33%; } }
+#jobs {
+  background-color: #efece3; }
+  #jobs .container {
+    text-align: center; }
+    #jobs .container .job-listing {
+      margin-bottom: 40px; }
+      #jobs .container .job-listing .details {
+        display: none; }
+    #jobs .container .job-links {
+      margin: 60px 0; }
 
 .accordion-trigger {
   transition: all .1s ease-in-out; }
@@ -61,13 +82,22 @@ footer {
   #links .container {
     text-align: center; }
     #links .container .art-kind {
-      margin-bottom: 40px; }
+      margin-bottom: 80px; }
       #links .container .art-kind .sub-art-kind ul {
-        display: none; }
+        display: none;
+        overflow: hidden; }
+        #links .container .art-kind .sub-art-kind ul .column {
+          width: 100%; }
 
+@media (min-width: 1200px) {
+  #links .container .art-kind .sub-art-kind ul .column {
+    padding: 0 5%;
+    width: 33%;
+    float: left; } }
 .topbox {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  clear: both; }
   .topbox .top-button {
     display: inline-block;
     padding: 10px;
@@ -129,6 +159,7 @@ a:hover {
 
 li {
   list-style-type: none;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  margin-bottom: 15px; }
 
 /*# sourceMappingURL=styles.css.map */
