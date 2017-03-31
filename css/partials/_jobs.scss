@@ -1,0 +1,22 @@
+#jobs{
+  .container{
+    text-align: center;
+
+    .job-listing{
+      margin-bottom: 40px;
+
+      .details{
+        display: none;
+      }
+    }
+  }
+}
+
+.accordion-trigger{
+  transition: all .1s ease-in-out;
+}
+
+.accordion-trigger:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}

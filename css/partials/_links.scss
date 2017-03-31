@@ -1,10 +1,21 @@
-.sub-art-kind{
+#links{
+  background-color: $color2;
+  .container{
+    text-align: center;
 
-  .accordion-trigger{
+    .art-kind{
+      margin-bottom: 40px;
+      .sub-art-kind{
 
-  }
+        .accordion-trigger{
 
-  ul{
-    display: none;
+        }
+
+        ul{
+          display: none;
+        }
+      }
+
+    }
   }
 }

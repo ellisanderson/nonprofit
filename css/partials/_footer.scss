@@ -2,10 +2,6 @@ footer{
   background-color: $color1;
   text-align: center;
 
-  h2{
-    font-weight: 200;
-  }
-
   .container{
 
     .contact{
@@ -46,12 +42,17 @@ footer{
       flex-wrap: wrap;
 
       .contact{
-        float:left;
         width: 50%;
       }
 
       .staff{
         width: 50%;
+
+        .columns{
+          .column{
+            padding-right: 15%;
+          }
+        }
       }
     }
   }
@@ -69,6 +70,12 @@ footer{
 
       .staff{
         width: 66%;
+
+        .columns{
+          .column{
+            width: 50%;
+          }
+        }
       }
     }
   }
@@ -76,5 +83,23 @@ footer{
 
 
 @media (min-width:1200px) {
+  footer{
 
+    .container{
+
+      .contact{
+        width: 25%;
+      }
+
+      .staff{
+        width: 75%;
+
+        .columns{
+          .column{
+            width:33%;
+          }
+        }
+      }
+    }
+  }
 }

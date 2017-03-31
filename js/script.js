@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.accordion-trigger').click(function(){
-    $(this).next('ul').slideToggle();
+    $(this).next('ul, .details').slideToggle();
   });
 });
 
