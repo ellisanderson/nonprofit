@@ -5,22 +5,50 @@
 
     .sub-sections{
       margin-top: 40px;
+
       .sub-section{
         width: 100%;
-        margin-bottom: 40px;
-        // border:1px solid blue;
+        margin-bottom: 80px;
+      }
+
+      a:hover{
+        color: $color1;
+      }
+
+      a:hover .grant-button{
+        background-color: lighten($color3, 10%);
+      }
+
+      .grant-button{
+        margin: 0 auto;
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+        padding:20px 40px;
+        margin-bottom: 80px;
+        background-color: $color3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+          font-size: 1.5rem;
+        }
       }
     }
   }
 }
 
 
-
-
 // MEDIA QUERIES_____________________
 @media (min-width:767px) {
   #grants{
     .container{
+
+      p{
+        max-width: 767px;
+        margin: 0 auto;
+      }
 
       .sub-sections{
         display: flex;
@@ -29,8 +57,13 @@
 
         .sub-section{
           width: 50%;
-          min-height: 300px;
+          min-height: 250px;
           padding: 0 5%;
+          margin-bottom: 40px;
+        }
+
+        a{
+          margin: 0 5% 0px;
         }
       }
     }
@@ -45,7 +78,13 @@
       .sub-sections{
 
         .sub-section{
+          min-height: 270px;
           width: 33%;
+        }
+
+        .grant-button{
+          // width: 29%;
+          // margin: 0 2% 80px;
         }
       }
     }

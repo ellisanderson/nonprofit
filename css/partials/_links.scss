@@ -3,8 +3,12 @@
   .container{
     text-align: center;
 
+    a:hover{
+      color: $color1;
+    }
+
     .art-kind{
-      margin-bottom: 80px;
+
       .sub-art-kind{
 
         .accordion-trigger{

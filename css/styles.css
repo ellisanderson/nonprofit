@@ -6,26 +6,53 @@
       margin-top: 40px; }
       #grants .container .sub-sections .sub-section {
         width: 100%;
-        margin-bottom: 40px; }
+        margin-bottom: 80px; }
+      #grants .container .sub-sections a:hover {
+        color: #db6639; }
+      #grants .container .sub-sections a:hover .grant-button {
+        background-color: white; }
+      #grants .container .sub-sections .grant-button {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        padding: 20px 40px;
+        margin-bottom: 80px;
+        background-color: #efece3;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        #grants .container .sub-sections .grant-button h2 {
+          font-size: 1.5rem; }
 
 @media (min-width: 767px) {
+  #grants .container p {
+    max-width: 767px;
+    margin: 0 auto; }
   #grants .container .sub-sections {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
     #grants .container .sub-sections .sub-section {
       width: 50%;
-      min-height: 300px;
-      padding: 0 5%; } }
+      min-height: 250px;
+      padding: 0 5%;
+      margin-bottom: 40px; }
+    #grants .container .sub-sections a {
+      margin: 0 5% 0px; } }
 @media (min-width: 1200px) {
   #grants .container .sub-sections .sub-section {
+    min-height: 270px;
     width: 33%; } }
 #jobs {
   background-color: #efece3; }
   #jobs .container {
     text-align: center; }
+    #jobs .container a:hover {
+      color: #db6639; }
     #jobs .container .job-listing {
-      margin-bottom: 40px; }
+      max-width: 767px;
+      margin: 0 auto 40px; }
       #jobs .container .job-listing .details {
         display: none; }
     #jobs .container .job-links {
@@ -35,12 +62,15 @@
   transition: all .1s ease-in-out; }
 
 .accordion-trigger:hover {
+  color: #db6639;
   transform: scale(1.05);
   cursor: pointer; }
 
 footer {
   background-color: #db6639;
   text-align: center; }
+  footer .container a:hover {
+    color: black; }
   footer .container .contact {
     margin-bottom: 50px; }
   footer .container .staff .columns {
@@ -81,13 +111,13 @@ footer {
   background-color: #eacbb4; }
   #links .container {
     text-align: center; }
-    #links .container .art-kind {
-      margin-bottom: 80px; }
-      #links .container .art-kind .sub-art-kind ul {
-        display: none;
-        overflow: hidden; }
-        #links .container .art-kind .sub-art-kind ul .column {
-          width: 100%; }
+    #links .container a:hover {
+      color: #db6639; }
+    #links .container .art-kind .sub-art-kind ul {
+      display: none;
+      overflow: hidden; }
+      #links .container .art-kind .sub-art-kind ul .column {
+        width: 100%; }
 
 @media (min-width: 1200px) {
   #links .container .art-kind .sub-art-kind ul .column {
@@ -150,7 +180,7 @@ a {
   text-decoration: none; }
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .container {
   width: 80%;
@@ -161,5 +191,11 @@ li {
   list-style-type: none;
   line-height: 1.5rem;
   margin-bottom: 15px; }
+
+hr {
+  border: none;
+  border-top: 1px solid #403d39;
+  margin: 40px auto;
+  max-width: 767px; }
 
 /*# sourceMappingURL=styles.css.map */
