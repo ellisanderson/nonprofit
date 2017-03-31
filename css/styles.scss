@@ -3,15 +3,70 @@
 @import "partials/_grants.scss";
 @import "partials/_jobs.scss";
 @import "partials/_footer.scss";
+<<<<<<< HEAD
 @import "partials/_header.scss";
 @import "partials/_isaiah.scss";
+=======
+@import "partials/_links.scss";
+@import "partials/_topbox.scss";
+>>>>>>> 1fc4bed2491e586e95bae2a85a220fa7cb493947
 
 body{
   font-family: 'Oswald', sans-serif;
 }
 
-* {
+*, h1 {
   margin:0;
   padding:0;
   box-sizing: border-box;
+  letter-spacing: .05rem;
+}
+
+p{
+  line-height: 1.5rem;
+  color: $color5;
+}
+
+h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h3{
+  font-size: 1.3rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h4{
+  margin-bottom: 5px;
+}
+
+a{
+  color: $color5;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.container{
+  width:80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+li{
+  list-style-type: none;
+  line-height: 1.5rem;
 }

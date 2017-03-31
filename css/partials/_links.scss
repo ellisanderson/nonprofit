@@ -1,0 +1,21 @@
+#links{
+  background-color: $color2;
+  .container{
+    text-align: center;
+
+    .art-kind{
+      margin-bottom: 40px;
+      .sub-art-kind{
+
+        .accordion-trigger{
+
+        }
+
+        ul{
+          display: none;
+        }
+      }
+
+    }
+  }
+}
