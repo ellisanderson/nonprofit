@@ -47,6 +47,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background: $color1;
     padding: 0px 20px;
   }
