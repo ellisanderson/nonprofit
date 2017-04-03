@@ -22,7 +22,7 @@ header {
   input {
     width: 200px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 3px;
     // border: 1px solid black;
     border: none;
     background:white url("../images/search.png") no-repeat;
@@ -48,10 +48,25 @@ header {
     justify-content: space-between;
     align-items: center;
     background: $color1;
-    padding: 5px 20px;
+    padding: 0px 20px;
   }
   box-shadow: 0px 3px 3px rgba(0,0,0,.2);
   overflow: hidden;
+  li {
+    padding: 10px;
+    margin: 0px;
+    border-bottom: 4px solid rgba(0,0,0,0);
+    font-weight: 300;
+    a {
+      text-decoration: none;
+    }
+    &:hover {
+      border-bottom: 4px solid rgba(0,0,0,0.3);
+      // transform: scale(1.2);
+      font-weight: 400;
+      background: rgba(0,0,0,0.1);
+    }
+  }
 }
 
 .smaller {
