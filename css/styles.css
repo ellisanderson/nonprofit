@@ -13,10 +13,10 @@
         background-color: white; }
       #grants .container .sub-sections .grant-button {
         margin: 0 auto;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
-        padding: 20px 40px;
+        padding: 50px;
         margin-bottom: 80px;
         background-color: #efece3;
         display: flex;
@@ -24,7 +24,7 @@
         justify-content: center;
         transition: all .2s ease-in-out; }
         #grants .container .sub-sections .grant-button h2 {
-          font-size: 1.5rem; }
+          font-size: 1.3rem; }
       #grants .container .sub-sections .grant-button:hover {
         transform: scale(1.1); }
 
@@ -155,6 +155,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background: #db6639;
     padding: 0px 20px; }
   .nav li {
@@ -219,11 +220,18 @@ header {
     background-color: rgba(0, 0, 0, 0.1); }
 
 .about-me {
-  background: #eacbb4;
-  margin-top: 190px; }
-  .about-me .articles {
-    text-align: center; }
+  background: #eacbb4; }
+  .about-me .container {
+    padding-top: 300px; }
+    .about-me .container .articles {
+      text-align: center;
+      margin: 0 auto; }
+      .about-me .container .articles article {
+        margin-bottom: 60px; }
 
+@media (min-width: 767px) {
+  .about-me .container .articles {
+    max-width: 900px; } }
 .exhibits-carousel {
   height: 400px;
   margin: 40px 0px; }
@@ -247,6 +255,18 @@ header {
   top: 200px;
   right: -50px; }
 
+#facility {
+  background: linear-gradient(rgba(234, 203, 180, 0.75), #eacbb4), url("../images/facility.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
+  #facility .container .content {
+    text-align: center;
+    margin: 0 auto; }
+
+@media (min-width: 767px) {
+  #facility .container .content {
+    max-width: 900px; } }
 body {
   font-family: 'Oswald', sans-serif; }
 

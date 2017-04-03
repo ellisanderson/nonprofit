@@ -1,7 +1,32 @@
 .about-me {
   background: $color2;
-  margin-top: 190px;
-  .articles {
-    text-align: center;
+  // margin-top: 190px;
+
+  .container{
+    padding-top: 300px;
+
+    .articles {
+      text-align: center;
+      margin: 0 auto;
+
+      article{
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+
+
+
+// MEDIA QUERIES_______________________________
+
+@media (min-width:767px) {
+  .about-me{
+    .container{
+      .articles{
+        max-width: 900px;
+      }
+    }
   }
 }

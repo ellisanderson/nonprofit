@@ -1,0 +1,37 @@
+#facility{
+  background: linear-gradient(rgba(234,203,180, .75), rgba(234,203,180,1)), url('../images/facility.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  .container{
+
+    .content{
+      text-align: center;
+      margin: 0 auto;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES___________________________________
+
+@media (min-width:767px) {
+  #facility{
+    .container{
+      .content{
+        max-width: 900px;
+      }
+    }
+  }
+}
