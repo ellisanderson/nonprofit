@@ -4,11 +4,12 @@ footer{
 
   .container{
 
+    a:hover{
+      color:black;
+    }
+
     .contact{
       margin-bottom: 50px;
-      // width: 22%;
-      // float: left;
-      // margin-right: 3%;
     }
 
     .staff{
@@ -16,11 +17,8 @@ footer{
         margin-bottom: 50px;
         display: flex;
         flex-wrap: wrap;
-        // width: 75%;
 
         .column{
-          // width: 28%;
-          // margin-right: 5%;
           width: 100%;
         }
       }

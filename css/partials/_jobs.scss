@@ -3,8 +3,13 @@
   .container{
     text-align: center;
 
+    a:hover{
+      color: $color1;
+    }
+
     .job-listing{
-      margin-bottom: 40px;
+      max-width: 767px;
+      margin: 0 auto 40px;
 
       .details{
         display: none;
@@ -22,6 +27,7 @@
 }
 
 .accordion-trigger:hover{
+  color: $color1;
   transform: scale(1.05);
   cursor: pointer;
 }
