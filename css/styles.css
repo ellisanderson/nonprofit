@@ -170,9 +170,8 @@ header {
     font-weight: 300; }
     .nav li a {
       text-decoration: none; }
-    .nav li:hover {
-      border-bottom: 4px solid rgba(0, 0, 0, 0.3);
-      background: rgba(0, 0, 0, 0.1); }
+      .nav li a:hover {
+        color: #eee; }
 
 .hamburger {
   width: 40px;

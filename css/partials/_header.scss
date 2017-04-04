@@ -69,12 +69,9 @@ header {
     font-weight: 300;
     a {
       text-decoration: none;
-    }
-    &:hover {
-      border-bottom: 4px solid rgba(0,0,0,0.3);
-      // transform: scale(1.2);
-      // font-weight: 400;
-      background: rgba(0,0,0,0.1);
+      &:hover {
+        color: #eee;
+      }
     }
   }
 }
