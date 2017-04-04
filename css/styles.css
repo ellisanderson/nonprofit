@@ -125,7 +125,8 @@ header {
   header #logo {
     width: 100px; }
   header .l-container, header .r-container {
-    width: 200px; }
+    width: 200px;
+    text-align: center; }
   header .m-container {
     text-align: center; }
   header input {
@@ -147,6 +148,7 @@ header {
   top: 190px;
   width: 100%;
   transition: .5s;
+  overflow: hidden;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
   overflow: hidden; }
   .nav ul {
@@ -170,6 +172,17 @@ header {
       font-weight: 400;
       background: rgba(0, 0, 0, 0.1); }
 
+.hamburger {
+  width: 40px;
+  height: 50px;
+  display: none; }
+  .hamburger .rect {
+    width: 40px;
+    height: 5px;
+    background: white;
+    margin-bottom: 8px;
+    margin-left: 5px; }
+
 .smaller {
   height: 80px;
   padding: 10px;
@@ -184,6 +197,40 @@ header {
 .smaller-nav {
   top: 80px; }
 
+@media (max-width: 620px) {
+  .hamburger {
+    display: block; }
+
+  #nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%; }
+
+  .nav {
+    box-shadow: none;
+    top: 220px; }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: 270px; }
+    header h2 {
+      font-size: 1em; }
+
+  .l-container {
+    order: 2; }
+
+  .m-container {
+    order: 1; }
+
+  .r-container {
+    order: 3; }
+
+  .smaller-nav {
+    top: 20px; }
+
+  .smaller .r-container {
+    display: none; } }
 #links {
   background-color: #eacbb4; }
   #links .container {
