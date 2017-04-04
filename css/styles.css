@@ -197,8 +197,7 @@ header {
     display: none; }
 
 .smaller-nav {
-  top: 80px;
-  display: none; }
+  top: 80px; }
 
 @media (max-width: 620px) {
   .hamburger {
