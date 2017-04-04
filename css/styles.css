@@ -42,9 +42,12 @@
     #grants .container .sub-sections a {
       margin: 20px; } }
 @media (min-width: 1200px) {
-  #grants .container .sub-sections .sub-section {
-    min-height: 270px;
-    width: 33%; } }
+  #grants .container .sub-sections {
+    max-width: 1200px;
+    margin: 40px auto 0; }
+    #grants .container .sub-sections .sub-section {
+      min-height: 270px;
+      width: 33%; } }
 #jobs {
   background-color: #efece3; }
   #jobs .container {
