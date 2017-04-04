@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  $('.hamburger-trigger').click(function(){
+    $('.hamburger-menu').slideToggle();
+  });
+});
+
+
+
+$(document).ready(function(){
   $('.accordion-trigger').click(function(){
     $(this).next('ul, .details').slideToggle();
   });

@@ -8,6 +8,8 @@
     <script src="https://use.fontawesome.com/d631437608.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -16,37 +18,42 @@
 
   <div class="header2">
 
-      <div class="logo">
-        <a href="#"><img src="images/dac-logo.svg" alt="Durham Arts Council Logo"></a>
-        <h2>Creating Community Through the Arts</h2>
-      </div>
+      <div class="header-top">
+        <div class="logo">
+          <a href="#"><img src="images/dac-logo.svg" alt="Durham Arts Council Logo"></a>
+          <h2>Creating Community Through the Arts</h2>
+        </div>
 
-      <div class="social">
-        <a href="#"><img src="images/Facebook.png" alt="Facebook logo"></a>
-        <a href="#"><img src="images/Instagram.png" alt="Instagram logo"></a>
-        <a href="#"><img src="images/Twitter.png" alt="Twitter logo"></a>
-        <a href="#"><img src="images/Vimeo.png" alt="Vimeo logo"></a>
-      </div>
+        <div class="social">
+          <a href="#"><img src="images/Facebook.png" alt="Facebook logo"></a>
+          <a href="#"><img src="images/Instagram.png" alt="Instagram logo"></a>
+          <a href="#"><img src="images/Twitter.png" alt="Twitter logo"></a>
+          <a href="#"><img src="images/Vimeo.png" alt="Vimeo logo"></a>
+        </div>
 
-      <div class="search">
-        <button type="button" name="button">search</button>
-        <input type="text" name="" value="" placeholder="">
+        <div class="search">
+          <button type="button" name="button">search</button>
+          <input type="text" name="" value="" placeholder="">
+        </div>
       </div>
 
 
       <nav class="main-nav">
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Grants & Resources</a></li>
-          <li><a href="#">Exhibits</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Job Opportunities</a></li>
-          <li><a href="#">Links</a></li>
+          <a href="#"><li>About Us</li></a>
+          <a href="#"><li>Grants & Resources</li></a>
+          <a href="#"><li>Exhibits</li></a>
+          <a href="#"><li>Contact Us</li></a>
+          <a href="#"><li>Job Opportunities</li></a>
+          <a href="#"><li>Links</li></a>
         </ul>
       </nav>
 
       <nav class="hamburger-nav">
-        <ul>
+        <div class="hamburger-trigger">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul class="hamburger-menu">
           <li><a href="#">About Us</a></li>
           <li><a href="#">Grants & Resources</a></li>
           <li><a href="#">Exhibits</a></li>
@@ -67,7 +74,7 @@
     <h1>About Us</h1>
     <div class="articles">
 
-      <br>
+      <!-- <br> -->
 
       <article class="paragraph">
         <h2>So what's an arts council?</h2>
