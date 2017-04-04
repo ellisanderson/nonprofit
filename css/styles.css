@@ -379,6 +379,10 @@ header {
 @media (min-width: 767px) {
   #facility .container .content {
     max-width: 900px; } }
+.header2 {
+  height: 200px;
+  background-color: #db6639; }
+
 body {
   font-family: 'Oswald', sans-serif; }
 
