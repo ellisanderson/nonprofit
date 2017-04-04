@@ -13,8 +13,8 @@
         background-color: white; }
       #grants .container .sub-sections .grant-button {
         margin: 0 auto;
-        width: 250px;
-        height: 250px;
+        width: 275px;
+        height: 275px;
         border-radius: 50%;
         padding: 50px;
         margin-bottom: 80px;
@@ -23,8 +23,6 @@
         align-items: center;
         justify-content: center;
         transition: all .2s ease-in-out; }
-        #grants .container .sub-sections .grant-button h2 {
-          font-size: 1.3rem; }
       #grants .container .sub-sections .grant-button:hover {
         transform: scale(1.1); }
 
@@ -42,7 +40,7 @@
       padding: 0 5%;
       margin-bottom: 40px; }
     #grants .container .sub-sections a {
-      margin: 0 5% 0px; } }
+      margin: 20px; } }
 @media (min-width: 1200px) {
   #grants .container .sub-sections .sub-section {
     min-height: 270px;
@@ -121,7 +119,8 @@ header {
   justify-content: space-between;
   padding: 10px;
   padding-top: 20px;
-  transition: .5s; }
+  transition: .5s;
+  z-index: 100000000; }
   header #logo {
     width: 100px; }
   header .l-container, header .r-container {
@@ -147,13 +146,15 @@ header {
   top: 190px;
   width: 100%;
   transition: .5s;
+  margin: 0 auto;
+  z-index: 100000000;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
   overflow: hidden; }
   .nav ul {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background: #db6639;
@@ -167,7 +168,6 @@ header {
       text-decoration: none; }
     .nav li:hover {
       border-bottom: 4px solid rgba(0, 0, 0, 0.3);
-      font-weight: 400;
       background: rgba(0, 0, 0, 0.1); }
 
 .smaller {
@@ -225,36 +225,58 @@ header {
     padding-top: 300px; }
     .about-me .container .articles {
       text-align: center;
-      margin: 0 auto; }
-      .about-me .container .articles article {
-        margin-bottom: 60px; }
+      margin-bottom: 80px; }
+      .about-me .container .articles .paragraph {
+        margin-bottom: 60px;
+        margin: 0 auto; }
+      .about-me .container .articles .support {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .about-me .container .articles .support p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 275px;
+          height: 275px;
+          padding: 50px;
+          margin: 20px;
+          background-color: #efece3;
+          border-radius: 50%; }
 
 @media (min-width: 767px) {
-  .about-me .container .articles {
-    max-width: 900px; } }
-.exhibits-carousel {
-  height: 400px;
-  margin: 40px 0px; }
-  .exhibits-carousel img {
-    height: 400px;
+  .about-me .container .articles .paragraph {
+    max-width: 900px; }
+  .about-me .container .articles .support {
+    max-width: 1200px;
+    margin: 0 auto; } }
+.exhibits {
+  background-color: #efece3; }
+  .exhibits .container .text {
+    text-align: center;
     margin: 0 auto; }
+  .exhibits .container .arrows {
+    position: relative;
+    background: red;
+    width: 100%; }
+  .exhibits .container .left, .exhibits .container .right {
+    position: absolute; }
+  .exhibits .container .left {
+    top: 200px;
+    left: -50px; }
+  .exhibits .container .right {
+    top: 200px;
+    right: -50px; }
+  .exhibits .container .exhibits-carousel {
+    height: 400px;
+    margin: 40px 0px; }
+    .exhibits .container .exhibits-carousel img {
+      height: 400px;
+      margin: 0 auto; }
 
-.arrows {
-  position: relative;
-  background: red;
-  width: 100%; }
-
-.left, .right {
-  position: absolute; }
-
-.left {
-  top: 200px;
-  left: -50px; }
-
-.right {
-  top: 200px;
-  right: -50px; }
-
+@media (min-width: 767px) {
+  .text {
+    max-width: 767px; } }
 #facility {
   background: linear-gradient(rgba(234, 203, 180, 0.75), #eacbb4), url("../images/facility.jpg");
   background-repeat: no-repeat;
@@ -277,8 +299,11 @@ body {
   letter-spacing: .05rem; }
 
 p {
-  line-height: 1.5rem;
-  color: #403d39; }
+  letter-spacing: .06rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  color: #403d39;
+  font-weight: 300; }
 
 h1 {
   font-size: 3rem;
@@ -313,8 +338,10 @@ a:hover {
   padding: 50px 0; }
 
 li {
+  font-weight: 300;
+  font-size: 1.1rem;
   list-style-type: none;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   margin-bottom: 15px; }
 
 hr {

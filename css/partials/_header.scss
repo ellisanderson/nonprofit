@@ -10,12 +10,16 @@ header {
   padding: 10px;
   padding-top: 20px;
   transition: .5s;
+  z-index: 100000000;
+
   #logo {
     width: 100px;
   }
+
   .l-container, .r-container {
     width: 200px;
   }
+
   .m-container {
     text-align: center;
   }
@@ -36,16 +40,20 @@ header {
     }
   }
 }
+
 .nav {
   position: fixed;
   top: 190px;
   width: 100%;
   transition: .5s;
+  margin: 0 auto;
+  z-index: 100000000;
+
   ul {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background: $color1;
@@ -64,7 +72,7 @@ header {
     &:hover {
       border-bottom: 4px solid rgba(0,0,0,0.3);
       // transform: scale(1.2);
-      font-weight: 400;
+      // font-weight: 400;
       background: rgba(0,0,0,0.1);
     }
   }
@@ -87,5 +95,36 @@ header {
 }
 .smaller-nav {
   top: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES_____________________________________
+
+@media (min-width:767px) {
+
+}
+
+
+
+@media (min-width:900px) {
+
+}
+
+
+
+@media (min-width:1200px) {
 
 }

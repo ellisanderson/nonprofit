@@ -21,8 +21,8 @@
 
       .grant-button{
         margin: 0 auto;
-        width:250px;
-        height: 250px;
+        width:275px;
+        height: 275px;
         border-radius: 50%;
         padding:50px;
         margin-bottom: 80px;
@@ -31,10 +31,6 @@
         align-items: center;
         justify-content: center;
         transition: all .2s ease-in-out;
-
-        h2{
-          font-size: 1.3rem;
-        }
       }
 
       .grant-button:hover{
@@ -68,7 +64,7 @@
         }
 
         a{
-          margin: 0 5% 0px;
+          margin: 20px;
         }
       }
     }

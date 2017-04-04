@@ -24,8 +24,11 @@ body{
 }
 
 p{
-  line-height: 1.5rem;
+  letter-spacing: .06rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
   color: $color5;
+  font-weight: 300;
 }
 
 h1{
@@ -68,8 +71,10 @@ a:hover{
 }
 
 li{
+  font-weight: 300;
+  font-size: 1.1rem;
   list-style-type: none;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   margin-bottom: 15px;
 }
 

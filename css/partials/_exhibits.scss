@@ -1,24 +1,51 @@
-.exhibits-carousel {
-  height: 400px;
-  margin: 40px 0px;
-  img {
-    height: 400px;
-    margin: 0 auto;
+.exhibits{
+  background-color: $color3;
+  .container{
+    .text{
+      text-align: center;
+      margin:0 auto;
+    }
+
+    .arrows {
+      position: relative;
+      background: red;
+      width: 100%;
+    }
+    .left, .right {
+      position:absolute;
+    }
+
+    .left {
+      top: 200px;
+      left: -50px
+    }
+
+    .right {
+      top: 200px;
+      right: -50px;
+    }
+
+    .exhibits-carousel {
+      height: 400px;
+      margin: 40px 0px;
+      img {
+        height: 400px;
+        margin: 0 auto;
+      }
+    }
+
   }
 }
-.arrows {
-  position: relative;
-  background: red;
-  width: 100%;
-}
-.left, .right {
-  position:absolute;
-}
-.left {
-  top: 200px;
-  left: -50px
-}
-.right {
-  top: 200px;
-  right: -50px;
+
+
+
+
+
+
+// MEDIA QUERIES________________________________________
+
+@media (min-width:767px) {
+  .text{
+    max-width: 767px;
+  }
 }
