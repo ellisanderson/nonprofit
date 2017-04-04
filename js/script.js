@@ -16,7 +16,10 @@ $(document).ready(function(){
 
 var d = true;
 $(document).ready(function(){
-
+  if($(window).width() < 620) {
+    $('#nav').slideToggle("fast");
+    d = false;
+  }
   $('.exhibits-carousel').slick({
     // centerMode: true,
     dots: true,
@@ -53,6 +56,8 @@ $(window).resize(function() {
     }
   }
 })
+
+
 
 window.addEventListener('scroll', function(e){
     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
