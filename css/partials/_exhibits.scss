@@ -8,25 +8,25 @@
 
     .arrows {
       position: relative;
-      background: red;
       width: 100%;
       z-index: 1000;
     }
+
     .left, .right {
       position:absolute;
     }
 
     .left {
-      top: 260px;
-      left: 10px;
-      font-size: 2rem;
+      top: -120px;
+      left: 3%;
+      font-size: 1.5rem;
       color:white;
     }
 
     .right {
-      top: 260px;
-      right: 10px;
-      font-size: 2rem;
+      top: -120px;
+      right: 3%;
+      font-size: 1.5rem;
       color:white;
     }
 
@@ -34,24 +34,41 @@
       height: 600px;
       margin: 40px auto 80px;
 
-      .carousel-item{
+      .carousel-item1, .carousel-item2, .carousel-item3{
         overflow: hidden;
         text-align: center;
         height:600px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-
-        .item-description{
-          height: 200px;
-          padding: 20px;
-          background-color: $color2;
+        h2{
+          font-size: 1.5rem;
         }
 
-        img{
-          // height: 400px;
-          width: 100%;
+        a:hover{
+          color:$color1;
         }
-
       }
+
+      .carousel-item1{
+        background-image: url('../images/artist1.jpg');
+      }
+
+      .carousel-item2{
+        background-image: url('../images/artist2.jpg');
+      }
+
+      .carousel-item3{
+        background-image: url('../images/artist3.jpg');
+      }
+
+      .item-description{
+        height: 225px;
+        padding: 20px;
+        background-color: $color2;
+      }
+
     }
 
   }
@@ -66,6 +83,48 @@
 
 @media (min-width:767px) {
   .text{
-    max-width: 767px;
+    max-width: 900px;
+  }
+
+  .exhibits{
+    .exhibits-carousel{
+      .carousel-item1, .carousel-item2, .carousel-item3{
+        .item-description{
+          h2{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:900px) {
+  .exhibits{
+    .container{
+      .left{
+        top:-400px;
+        left:-5%;
+        color:black;
+
+      }
+
+      .right{
+        top:-400px;
+        right:-5%;
+        color: black;
+      }
+
+      .exhibits-carousel{
+        .carousel-item1, .carousel-item2, .carousel-item3{
+          .item-description{
+            float: left;
+            height: 600px;
+            padding: 20px 40px;
+            width: 300px;
+          }
+        }
+      }
+    }
   }
 }

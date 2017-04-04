@@ -309,38 +309,65 @@ header {
     margin: 0 auto; }
   .exhibits .container .arrows {
     position: relative;
-    background: red;
     width: 100%;
     z-index: 1000; }
   .exhibits .container .left, .exhibits .container .right {
     position: absolute; }
   .exhibits .container .left {
-    top: 260px;
-    left: 10px;
-    font-size: 2rem;
+    top: -120px;
+    left: 3%;
+    font-size: 1.5rem;
     color: white; }
   .exhibits .container .right {
-    top: 260px;
-    right: 10px;
-    font-size: 2rem;
+    top: -120px;
+    right: 3%;
+    font-size: 1.5rem;
     color: white; }
   .exhibits .container .exhibits-carousel {
     height: 600px;
     margin: 40px auto 80px; }
-    .exhibits .container .exhibits-carousel .carousel-item {
+    .exhibits .container .exhibits-carousel .carousel-item1, .exhibits .container .exhibits-carousel .carousel-item2, .exhibits .container .exhibits-carousel .carousel-item3 {
       overflow: hidden;
       text-align: center;
-      height: 600px; }
-      .exhibits .container .exhibits-carousel .carousel-item .item-description {
-        height: 200px;
-        padding: 20px;
-        background-color: #eacbb4; }
-      .exhibits .container .exhibits-carousel .carousel-item img {
-        width: 100%; }
+      height: 600px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      .exhibits .container .exhibits-carousel .carousel-item1 h2, .exhibits .container .exhibits-carousel .carousel-item2 h2, .exhibits .container .exhibits-carousel .carousel-item3 h2 {
+        font-size: 1.5rem; }
+      .exhibits .container .exhibits-carousel .carousel-item1 a:hover, .exhibits .container .exhibits-carousel .carousel-item2 a:hover, .exhibits .container .exhibits-carousel .carousel-item3 a:hover {
+        color: #db6639; }
+    .exhibits .container .exhibits-carousel .carousel-item1 {
+      background-image: url("../images/artist1.jpg"); }
+    .exhibits .container .exhibits-carousel .carousel-item2 {
+      background-image: url("../images/artist2.jpg"); }
+    .exhibits .container .exhibits-carousel .carousel-item3 {
+      background-image: url("../images/artist3.jpg"); }
+    .exhibits .container .exhibits-carousel .item-description {
+      height: 225px;
+      padding: 20px;
+      background-color: #eacbb4; }
 
 @media (min-width: 767px) {
   .text {
-    max-width: 767px; } }
+    max-width: 900px; }
+
+  .exhibits .exhibits-carousel .carousel-item1 .item-description h2, .exhibits .exhibits-carousel .carousel-item2 .item-description h2, .exhibits .exhibits-carousel .carousel-item3 .item-description h2 {
+    font-size: 2rem; } }
+@media (min-width: 900px) {
+  .exhibits .container .left {
+    top: -400px;
+    left: -5%;
+    color: black; }
+  .exhibits .container .right {
+    top: -400px;
+    right: -5%;
+    color: black; }
+  .exhibits .container .exhibits-carousel .carousel-item1 .item-description, .exhibits .container .exhibits-carousel .carousel-item2 .item-description, .exhibits .container .exhibits-carousel .carousel-item3 .item-description {
+    float: left;
+    height: 600px;
+    padding: 20px 40px;
+    width: 300px; } }
 #facility {
   background: linear-gradient(rgba(234, 203, 180, 0.75), #eacbb4), url("../images/facility.jpg");
   background-repeat: no-repeat;
