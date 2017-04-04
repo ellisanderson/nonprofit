@@ -4,12 +4,16 @@ $(document).ready(function(){
   });
 });
 
+
+
 $(document).ready(function(){
   $('.top-button').click(function(){
     $('html, body').animate({scrollTop : 0},800);
 		return false;
   });
 });
+
+
 
 $(document).ready(function(){
   $('.exhibits-carousel').slick({
@@ -25,6 +29,8 @@ $('.left').on('click', function() {
 $('.right').on('click', function() {
   $('.exhibits-carousel').slick('slickNext');
 });
+
+
 
 window.addEventListener('scroll', function(e){
     var distanceY = window.pageYOffset || document.documentElement.scrollTop,
