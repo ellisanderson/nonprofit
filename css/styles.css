@@ -343,9 +343,9 @@ header {
     .exhibits .container .exhibits-carousel .carousel-item3 {
       background-image: url("../images/artist3.jpg"); }
     .exhibits .container .exhibits-carousel .item-description {
-      height: 225px;
-      padding: 20px;
-      background-color: #eacbb4; }
+      height: 200px;
+      padding: 10px 20px;
+      background-color: rgba(239, 236, 227, 0.75); }
 
 @media (min-width: 767px) {
   .text {
