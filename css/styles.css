@@ -233,6 +233,9 @@ header {
 
   .smaller .r-container {
     display: none; } }
+@media (min-width: 620px) {
+  .smaller-nav {
+    display: none; } }
 #links {
   background-color: #eacbb4; }
   #links .container {

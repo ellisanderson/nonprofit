@@ -221,7 +221,11 @@ header {
     }
   }
 }
-
+@media(min-width: 620px) {
+  .smaller-nav {
+    display: none;
+  }
+}
 
 
 
