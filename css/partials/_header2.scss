@@ -1,4 +1,94 @@
 .header2{
-  height: 200px;
   background-color: $color1;
+  position: fixed;
+  width: 100%;
+  padding:20px 10px 0;
+  z-index: 100000000000;
+  position: relative;
+
+  .logo{
+    text-align: center;
+
+    h2{
+      font-size: 1.5rem;
+    }
+
+    img{
+      width: 100px;
+    }
+  }
+
+  .social{
+    padding:5px;
+    display: flex;
+    justify-content: center;
+    // position: absolute;
+    // top:20px;
+    // left:20px;
+
+    img{
+      margin:2px;
+    }
+  }
+
+  .search{
+    padding:5px;
+    display: flex;
+    justify-content: center;
+    // position: absolute;
+    // top:20px;
+    // right:20px;
+  }
+
+  .main-nav{
+    display: none;
+    // margin-top:20px;
+    background-color: $color1;
+
+
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li{
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    li:hover{
+      background-color: rgba(0,0,0,.1);
+    }
+  }
+
+  .hamburger-nav{
+    display: none;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+@media (min-width:767px) {
+  .header2{
+
+    .social{
+      position: absolute;
+    }
+
+    .search{
+      position: absolute;
+    }
+    .main-nav{
+      display: block;
+    }
+
+    .hamburger-nav{
+      display: none;
+    }
+  }
 }

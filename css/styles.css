@@ -380,9 +380,53 @@ header {
   #facility .container .content {
     max-width: 900px; } }
 .header2 {
-  height: 200px;
-  background-color: #db6639; }
+  background-color: #db6639;
+  position: fixed;
+  width: 100%;
+  padding: 20px 10px 0;
+  z-index: 100000000000;
+  position: relative; }
+  .header2 .logo {
+    text-align: center; }
+    .header2 .logo h2 {
+      font-size: 1.5rem; }
+    .header2 .logo img {
+      width: 100px; }
+  .header2 .social {
+    padding: 5px;
+    display: flex;
+    justify-content: center; }
+    .header2 .social img {
+      margin: 2px; }
+  .header2 .search {
+    padding: 5px;
+    display: flex;
+    justify-content: center; }
+  .header2 .main-nav {
+    display: none;
+    background-color: #db6639; }
+    .header2 .main-nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .header2 .main-nav li {
+      padding: 10px;
+      margin: 0 10px; }
+    .header2 .main-nav li:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+  .header2 .hamburger-nav {
+    display: none;
+    text-align: center; }
 
+@media (min-width: 767px) {
+  .header2 .social {
+    position: absolute; }
+  .header2 .search {
+    position: absolute; }
+  .header2 .main-nav {
+    display: block; }
+  .header2 .hamburger-nav {
+    display: none; } }
 body {
   font-family: 'Oswald', sans-serif; }
 
