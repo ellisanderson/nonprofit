@@ -119,9 +119,11 @@ header {
   background: #db6639;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 10px;
   padding-top: 20px;
+  flex-wrap: wrap;
   z-index: 100000000; }
   header #logo {
     width: 100px; }
@@ -212,8 +214,6 @@ header {
     top: 220px; }
 
   header {
-    flex-direction: column;
-    align-items: center;
     height: 270px; }
     header h2 {
       font-size: 1em; }

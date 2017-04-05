@@ -12,7 +12,42 @@ $(document).ready(function(){
 		return false;
   });
 });
-
+$('#au').click(function() {
+  window.scroll({
+    top: $('.about-me').position().top,
+    behavior: 'smooth'
+  });
+})
+$('#gr').click(function() {
+  window.scroll({
+    top: $('.grants').position().top,
+    behavior: 'smooth'
+  });
+})
+$('#ex').click(function() {
+  window.scroll({
+    top: $('.exhibits').position().top,
+    behavior: 'smooth'
+  });
+})
+$('#cu').click(function() {
+  window.scroll({
+    top: $('footer').position().top,
+    behavior: 'smooth'
+  });
+})
+$('#jo').click(function() {
+  window.scroll({
+    top: $('.jobs').position().top,
+    behavior: 'smooth'
+  });
+})
+$('#ll').click(function() {
+  window.scroll({
+    top: $('.links').position().top,
+    behavior: 'smooth'
+  });
+})
 
 var d = true;
 $(document).ready(function(){
