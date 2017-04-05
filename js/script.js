@@ -21,40 +21,34 @@ $(document).ready(function(){
   });
 });
 $('#au').click(function() {
-  window.scroll({
-    top: $('.about-me').position().top,
-    behavior: 'smooth'
-  });
+  $('html, body').animate({
+          scrollTop: $('.about-me').offset().top
+        }, 1000);
 })
 $('#gr').click(function() {
-  window.scroll({
-    top: $('.grants').position().top,
-    behavior: 'smooth'
-  });
+  $('html, body').animate({
+          scrollTop: $('#grants').offset().top
+        }, 1000);
 })
 $('#ex').click(function() {
-  window.scroll({
-    top: $('.exhibits').position().top,
-    behavior: 'smooth'
-  });
+  $('html, body').animate({
+          scrollTop: $('.exhibits').offset().top
+        }, 1000);
 })
 $('#cu').click(function() {
-  window.scroll({
-    top: $('footer').position().top,
-    behavior: 'smooth'
-  });
+  $('html, body').animate({
+          scrollTop: $('footer').offset().top
+        }, 1000);
 })
 $('#jo').click(function() {
-  window.scroll({
-    top: $('.jobs').position().top,
-    behavior: 'smooth'
-  });
+  $('html, body').animate({
+          scrollTop: $('#jobs').offset().top
+        }, 1000);
 })
 $('#ll').click(function() {
-  window.scroll({
-    top: $('.links').position().top,
-    behavior: 'smooth'
-  });
+  $('html, body').animate({
+          scrollTop: $('#links').offset().top
+        }, 1000);
 })
 
 var d = true;
