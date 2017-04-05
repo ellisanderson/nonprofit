@@ -272,28 +272,26 @@ header {
 
 .about-me {
   background: #eacbb4; }
-  .about-me .container {
-    padding-top: 300px; }
-    .about-me .container .articles {
-      text-align: center;
-      margin-bottom: 80px; }
-      .about-me .container .articles .paragraph {
-        margin-bottom: 60px;
-        margin: 0 auto; }
-      .about-me .container .articles .support {
+  .about-me .container .articles {
+    text-align: center;
+    margin-bottom: 80px; }
+    .about-me .container .articles .paragraph {
+      margin-bottom: 60px;
+      margin: 0 auto; }
+    .about-me .container .articles .support {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .about-me .container .articles .support p {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center; }
-        .about-me .container .articles .support p {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 275px;
-          height: 275px;
-          padding: 50px;
-          margin: 20px;
-          background-color: #efece3;
-          border-radius: 50%; }
+        align-items: center;
+        justify-content: center;
+        width: 275px;
+        height: 275px;
+        padding: 50px;
+        margin: 20px;
+        background-color: #efece3;
+        border-radius: 50%; }
 
 @media (min-width: 767px) {
   .about-me .container .articles .paragraph {
@@ -343,9 +341,9 @@ header {
     .exhibits .container .exhibits-carousel .carousel-item3 {
       background-image: url("../images/artist3.jpg"); }
     .exhibits .container .exhibits-carousel .item-description {
-      height: 225px;
-      padding: 20px;
-      background-color: #eacbb4; }
+      height: 200px;
+      padding: 10px 20px;
+      background-color: rgba(239, 236, 227, 0.75); }
 
 @media (min-width: 767px) {
   .text {
@@ -379,6 +377,91 @@ header {
 @media (min-width: 767px) {
   #facility .container .content {
     max-width: 900px; } }
+.header2 {
+  background-color: #db6639;
+  width: 100%;
+  z-index: 100000000000;
+  padding-top: 20px; }
+  .header2 .header-top {
+    transition: all 1s ease-in-out;
+    margin-bottom: 20px; }
+    .header2 .header-top .logo {
+      text-align: center; }
+      .header2 .header-top .logo h2 {
+        font-size: 1.5rem;
+        margin: 10px 0 0; }
+      .header2 .header-top .logo img {
+        width: 100px; }
+    .header2 .header-top .social {
+      padding: 0 5px;
+      display: none;
+      justify-content: center; }
+      .header2 .header-top .social img {
+        margin-right: 10px; }
+    .header2 .header-top .search {
+      padding: 0 5px;
+      display: none;
+      justify-content: center; }
+      .header2 .header-top .search button {
+        border: none;
+        outline: none;
+        padding: 5px 7px;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-family: inherit;
+        font-weight: 300; }
+      .header2 .header-top .search input {
+        border: none;
+        outline: none;
+        width: 125px;
+        padding: 0 5px; }
+  .header2 .main-nav {
+    display: none;
+    background-color: #db6639; }
+    .header2 .main-nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .header2 .main-nav li {
+      padding: 15px 20px 20px;
+      margin: 0; }
+    .header2 .main-nav li:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+  .header2 .hamburger-nav {
+    background-color: #db6639;
+    padding: 15px 0;
+    text-align: center; }
+    .header2 .hamburger-nav .fa {
+      font-size: 2rem; }
+    .header2 .hamburger-nav .hamburger-menu {
+      padding-top: 20px;
+      display: none;
+      margin-top: 20px;
+      height: 100vh; }
+      .header2 .hamburger-nav .hamburger-menu li {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 200; }
+      .header2 .hamburger-nav .hamburger-menu a {
+        display: block;
+        padding: 10px; }
+      .header2 .hamburger-nav .hamburger-menu a:hover {
+        background-color: rgba(0, 0, 0, 0.1); }
+
+@media (min-width: 767px) {
+  .header2 .header-top .social {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+  .header2 .header-top .search {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+  .header2 .main-nav {
+    display: block; }
+  .header2 .hamburger-nav {
+    display: none; } }
 body {
   font-family: 'Oswald', sans-serif; }
 

@@ -1,0 +1,147 @@
+.header2{
+  background-color: $color1;
+  // position: fixed;
+  width: 100%;
+  z-index: 100000000000;
+  padding-top:20px;
+
+  .header-top{
+    transition: all 1s ease-in-out;
+    margin-bottom: 20px;
+
+    .logo{
+      text-align: center;
+      // margin-top: 20px;
+
+      h2{
+        font-size: 1.5rem;
+        margin:10px 0 0;
+      }
+
+      img{
+        width: 100px;
+      }
+    }
+
+    .social{
+      padding:0 5px;
+      display: none;
+      justify-content: center;
+
+      img{
+        margin-right:10px;
+      }
+    }
+
+    .search{
+      padding:0 5px;
+      display: none;
+      justify-content: center;
+
+      button{
+        border: none;
+        outline:none;
+        padding:5px 7px;
+        background-color: rgba(255,255,255,.5);
+        font-family: inherit;
+        font-weight: 300;
+      }
+
+      input{
+        border: none;
+        outline:none;
+        width: 125px;
+        padding: 0 5px;
+      }
+    }
+  }
+
+
+  .main-nav{
+    display: none;
+    background-color: $color1;
+
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li{
+      padding: 15px 20px 20px;
+      margin: 0;
+    }
+
+    li:hover{
+      background-color: rgba(0,0,0,.1);
+    }
+  }
+
+
+  .hamburger-nav{
+    background-color: $color1;
+    padding: 15px 0;
+    text-align: center;
+
+    .fa{
+      font-size: 2rem;
+    }
+
+    .hamburger-menu{
+      padding-top:20px;
+      display: none;
+      margin-top: 20px;
+      height: 100vh;
+
+      li{
+        margin:0;
+        font-size: 1.5rem;
+        font-weight: 200;
+      }
+
+      a{
+        display: block;
+        padding:10px;
+      }
+
+      a:hover{
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+  }
+}
+
+
+
+// MEDIA QUERIES_____________________________________________
+
+
+@media (min-width:767px) {
+  .header2{
+
+    .header-top{
+      .social{
+        display: flex;
+        position: absolute;
+        top:20px;
+        left:20px;
+
+      }
+
+      .search{
+        display: flex;
+        position: absolute;
+        top:20px;
+        right:20px;
+      }
+    }
+
+    .main-nav{
+      display: block;
+    }
+
+    .hamburger-nav{
+      display: none;
+    }
+  }
+}
