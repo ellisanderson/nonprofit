@@ -2,13 +2,15 @@
   background-color: $color1;
   position: fixed;
   width: 100%;
-  padding:20px 0 0;
   z-index: 100000000000;
 
   .header-top{
+    transition: all 1s ease-in-out;
+    margin-bottom: 20px;
+
     .logo{
       text-align: center;
-      // background-color: blue;
+      margin-top: 20px;
 
       h2{
         font-size: 1.5rem;
@@ -26,7 +28,7 @@
       justify-content: center;
 
       img{
-        margin:0 2px;
+        margin-right:10px;
       }
     }
 
@@ -36,7 +38,6 @@
       justify-content: center;
 
       button{
-        margin-right: 4px;
         border: none;
         outline:none;
         padding:5px 7px;
@@ -58,8 +59,6 @@
   .main-nav{
     display: none;
     background-color: $color1;
-    padding:10px 0 0;
-
 
     ul{
       display: flex;
@@ -68,7 +67,7 @@
     }
 
     li{
-      padding: 17px 20px 18px;
+      padding: 15px 20px 20px;
       margin: 0;
     }
 
@@ -80,7 +79,7 @@
 
   .hamburger-nav{
     background-color: $color1;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
 
     .fa{
@@ -88,6 +87,7 @@
     }
 
     .hamburger-menu{
+      padding-top:20px;
       display: none;
       margin-top: 20px;
       height: 100vh;

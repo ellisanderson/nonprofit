@@ -383,58 +383,60 @@ header {
   background-color: #db6639;
   position: fixed;
   width: 100%;
-  padding: 20px 0 0;
   z-index: 100000000000; }
-  .header2 .header-top .logo {
-    text-align: center; }
-    .header2 .header-top .logo h2 {
-      font-size: 1.5rem;
-      margin: 10px 0 0; }
-    .header2 .header-top .logo img {
-      width: 100px; }
-  .header2 .header-top .social {
-    padding: 0 5px;
-    display: none;
-    justify-content: center; }
-    .header2 .header-top .social img {
-      margin: 0 2px; }
-  .header2 .header-top .search {
-    padding: 0 5px;
-    display: none;
-    justify-content: center; }
-    .header2 .header-top .search button {
-      margin-right: 4px;
-      border: none;
-      outline: none;
-      padding: 5px 7px;
-      background-color: rgba(255, 255, 255, 0.5);
-      font-family: inherit;
-      font-weight: 300; }
-    .header2 .header-top .search input {
-      border: none;
-      outline: none;
-      width: 125px;
-      padding: 0 5px; }
+  .header2 .header-top {
+    transition: all 1s ease-in-out;
+    margin-bottom: 20px; }
+    .header2 .header-top .logo {
+      text-align: center;
+      margin-top: 20px; }
+      .header2 .header-top .logo h2 {
+        font-size: 1.5rem;
+        margin: 10px 0 0; }
+      .header2 .header-top .logo img {
+        width: 100px; }
+    .header2 .header-top .social {
+      padding: 0 5px;
+      display: none;
+      justify-content: center; }
+      .header2 .header-top .social img {
+        margin-right: 10px; }
+    .header2 .header-top .search {
+      padding: 0 5px;
+      display: none;
+      justify-content: center; }
+      .header2 .header-top .search button {
+        border: none;
+        outline: none;
+        padding: 5px 7px;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-family: inherit;
+        font-weight: 300; }
+      .header2 .header-top .search input {
+        border: none;
+        outline: none;
+        width: 125px;
+        padding: 0 5px; }
   .header2 .main-nav {
     display: none;
-    background-color: #db6639;
-    padding: 10px 0 0; }
+    background-color: #db6639; }
     .header2 .main-nav ul {
       display: flex;
       align-items: center;
       justify-content: center; }
     .header2 .main-nav li {
-      padding: 17px 20px 18px;
+      padding: 15px 20px 20px;
       margin: 0; }
     .header2 .main-nav li:hover {
       background-color: rgba(0, 0, 0, 0.1); }
   .header2 .hamburger-nav {
     background-color: #db6639;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center; }
     .header2 .hamburger-nav .fa {
       font-size: 2rem; }
     .header2 .hamburger-nav .hamburger-menu {
+      padding-top: 20px;
       display: none;
       margin-top: 20px;
       height: 100vh; }
