@@ -272,28 +272,26 @@ header {
 
 .about-me {
   background: #eacbb4; }
-  .about-me .container {
-    padding-top: 270px; }
-    .about-me .container .articles {
-      text-align: center;
-      margin-bottom: 80px; }
-      .about-me .container .articles .paragraph {
-        margin-bottom: 60px;
-        margin: 0 auto; }
-      .about-me .container .articles .support {
+  .about-me .container .articles {
+    text-align: center;
+    margin-bottom: 80px; }
+    .about-me .container .articles .paragraph {
+      margin-bottom: 60px;
+      margin: 0 auto; }
+    .about-me .container .articles .support {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .about-me .container .articles .support p {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center; }
-        .about-me .container .articles .support p {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 275px;
-          height: 275px;
-          padding: 50px;
-          margin: 20px;
-          background-color: #efece3;
-          border-radius: 50%; }
+        align-items: center;
+        justify-content: center;
+        width: 275px;
+        height: 275px;
+        padding: 50px;
+        margin: 20px;
+        background-color: #efece3;
+        border-radius: 50%; }
 
 @media (min-width: 767px) {
   .about-me .container .articles .paragraph {
@@ -381,15 +379,14 @@ header {
     max-width: 900px; } }
 .header2 {
   background-color: #db6639;
-  position: fixed;
   width: 100%;
-  z-index: 100000000000; }
+  z-index: 100000000000;
+  padding-top: 20px; }
   .header2 .header-top {
     transition: all 1s ease-in-out;
     margin-bottom: 20px; }
     .header2 .header-top .logo {
-      text-align: center;
-      margin-top: 20px; }
+      text-align: center; }
       .header2 .header-top .logo h2 {
         font-size: 1.5rem;
         margin: 10px 0 0; }

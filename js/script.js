@@ -90,10 +90,11 @@ $(window).resize(function() {
 //   });
 // });
 
-// $(document).ready(function(){
-//   if ($(window).scrollTop() > 300) {
-//       $('.header-top').hide();
-//   } else {
-//       $('.header-top').show();
-//   }
-// });
+$(document).ready(function(){
+  if ($(window).scrollTop() > 300) {
+    console.log("hide me");
+      $('.header-top').hide();
+  } else {
+      $('.header-top').show();
+  }
+});
